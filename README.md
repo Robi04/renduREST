@@ -52,12 +52,13 @@ Nous pouvons voir que notre application est composé de plusieurs package pour u
 #### POST Appel API : /teams :
 
 <img src="./postmanpostteams.png"> </img>
-
+Maintenant faisons un appel à la base de données pour voir si nos données ont bien été enregistrées
 <img src="./postmanpostteams2.png"> </img>
 
 #### POST Appel API : /players :
 
 <img src="./postmanpostteams.png"> </img>
+Maintenant faisons un appel à la base de données pour voir si nos données ont bien été enregistrées
 <img src="./postmanpostteams2.png"> </img>
 
 ## Script modejs:
