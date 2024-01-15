@@ -4,13 +4,8 @@
 
 Plusieurs étapes sont nécessaires pour l'initialisation du projet.
 
-1. Création du projet en allant sur spring initializr pour télécharger toutes les dépendances nécessaires au projet.
-2. Utilisation de :
-
-- Kit webest
-- Test
-- data-jpa
-- base de données H2
+1. Création du projet en allant sur <a href="https://start.spring.io/">Spring Initializr</a> pour télécharger toutes les dépendances nécessaires au projet.
+2. Utilisation des starter kit : **Web**, **Test**, **Data-Jpa** et une base de données **H2**
 
 3. Création d'un repository **Git** pour le projet.
 4. C'est partie, on peut commencer
@@ -27,4 +22,40 @@ Nous pouvons voir que notre application est composé de plusieurs package pour u
   <img src="./Controller.png"></img>
 
 - **Repository** : Contient les repositories de l'application qui vont permettre d'utiliser les procédures extraitent de JpaRepository pour ramener les informations par rapport à l'ID de nos entités.
-- **Bootstrap** : Contient le **Bean** de démarrage qui va apeler la fonction **Run** qui est un service qui va s'éxecuter au démarrage de notre application, celle-ci va envoyer des données directement dans la base de données que l'on pourra retrouver avec notre application
+- **Bootstrap** : Contient le **Bean** de démarrage qui va appeler la fonction **Run** qui est un service qui va s'éxecuter au démarrage de notre application, celle-ci va envoyer des données directement dans la base de données que l'on pourra retrouver avec notre application
+  <img src="./bootstrap.png"></img>
+
+  ## Analyse des requêtes sur PostMan
+
+  ici nous allons voir les différentes requêtes que nous pouvons faire sur notre application REST
+
+## GET
+
+#### GET Appel Api : /teams :
+
+<img src="./postmangetallteams.png"></img>
+
+#### GET Appel Api : /players :
+
+<img src="./postmangetallplayers.png"></img>
+
+#### GET Appel API : /team/{id} :
+
+<img src="./postmangetoneteam.png"></img>
+
+#### GET Appel API : /player/{id} :
+
+<img src="./postmangetoneplayer.png"></img>
+
+## POST
+
+#### POST Appel API : /teams :
+
+<img src="./postmanpostteams.png"> </img>
+
+<img src="./postmanpostteams2.png"> </img>
+
+#### POST Appel API : /players :
+
+<img src="./postmanpostteams.png"> </img>
+<img src="./postmanpostteams2.png"> </img>
