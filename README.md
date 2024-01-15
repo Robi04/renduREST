@@ -12,18 +12,18 @@ Plusieurs étapes sont nécessaires pour l'initialisation du projet.
 
 ## Hiérarichie des fichiers
 
-<img src="./Tree.png"></img>
+<img src="./asset/Tree.png"></img>
 Nous pouvons voir que notre application est composé de plusieurs package pour une meilleur organisation.
 
 - **Model** : Contient les différentes entité de l'application
   - Player ➡️ id, prenom, nom, age
   - Team ➡️ id, name, city
 - **Controller** : Contient les controlleurs de l'application qui vont nous permettre de pouvoir récupérer les requêtes http faites par le client, et appeler les interfaces présentes dans le package **Repositories**. Les controllers permettent la gestion de chaque actions prises en charge par une API REST : (POST, PUT, GET, DELETE...)
-  <img src="./Controller.png"></img>
+  <img src="./asset/Controller.png"></img>
 
 - **Repository** : Contient les repositories de l'application qui vont permettre d'utiliser les procédures extraitent de JpaRepository pour ramener les informations par rapport à l'ID de nos entités.
 - **Bootstrap** : Contient le **Bean** de démarrage qui va appeler la fonction **Run** qui est un service qui va s'éxecuter au démarrage de notre application, celle-ci va envoyer des données directement dans la base de données que l'on pourra retrouver avec notre application
-  <img src="./bootstrap.png"></img>
+  <img src="./asset/bootstrap.png"></img>
 
   ## Analyse des requêtes sur PostMan
 
@@ -33,33 +33,33 @@ Nous pouvons voir que notre application est composé de plusieurs package pour u
 
 #### GET Appel Api : /teams :
 
-<img src="./postmangetallteams.png"></img>
+<img src="./asset/postmangetallteams.png"></img>
 
 #### GET Appel Api : /players :
 
-<img src="./postmangetallplayers.png"></img>
+<img src="./asset/postmangetallplayers.png"></img>
 
 #### GET Appel API : /team/{id} :
 
-<img src="./postmangetoneteam.png"></img>
+<img src="./asset/postmangetoneteam.png"></img>
 
 #### GET Appel API : /player/{id} :
 
-<img src="./postmangetoneplayer.png"></img>
+<img src="./asset/postmangetoneplayer.png"></img>
 
 ## POST
 
 #### POST Appel API : /teams :
 
-<img src="./postmanpostteams.png"> </img>
+<img src="./asset/postmanpostteams.png"> </img>
 Maintenant faisons un appel à la base de données pour voir si nos données ont bien été enregistrées
-<img src="./postmanpostteams2.png"> </img>
+<img src="./asset/postmanpostteams2.png"> </img>
 
 #### POST Appel API : /players :
 
-<img src="./postmanpostteams.png"> </img>
+<img src="./asset/postmanpostteams.png"> </img>
 Maintenant faisons un appel à la base de données pour voir si nos données ont bien été enregistrées
-<img src="./postmanpostteams2.png"> </img>
+<img src="./asset/postmanpostteams2.png"> </img>
 
 ## Script modejs:
 
