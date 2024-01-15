@@ -68,12 +68,11 @@ npm install axios
 ```
 
 ```javascript
-
 const axios = require("axios");
 
 const getDataFromAPI = async () => {
   try {
-    const teamsResponse = await axios.get("http://localhost:8080/teams"); /
+    const teamsResponse = await axios.get("http://localhost:8080/teams");
     console.log("Équipes:", teamsResponse.data);
 
     const playersResponse = await axios.get("http://localhost:8080/players");
