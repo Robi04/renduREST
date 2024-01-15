@@ -59,3 +59,28 @@ Nous pouvons voir que notre application est composé de plusieurs package pour u
 
 <img src="./postmanpostteams.png"> </img>
 <img src="./postmanpostteams2.png"> </img>
+
+## Script modejs:
+
+```bash
+npm install axios
+```
+
+```javascript
+
+const axios = require("axios");
+
+const getDataFromAPI = async () => {
+  try {
+    const teamsResponse = await axios.get("http://localhost:8080/teams"); /
+    console.log("Équipes:", teamsResponse.data);
+
+    const playersResponse = await axios.get("http://localhost:8080/players");
+    console.log("Joueurs:", playersResponse.data);
+  } catch (error) {
+    console.error("Erreur lors de la récupération des données:", error);
+  }
+};
+
+getDataFromAPI();
+```
