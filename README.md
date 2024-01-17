@@ -61,7 +61,7 @@ Maintenant faisons un appel à la base de données pour voir si nos données ont
 Maintenant faisons un appel à la base de données pour voir si nos données ont bien été enregistrées
 <img src="./asset/postmanpostteams2.png"> </img>
 
-## Script modejs:
+## Script Node.js:
 
 ```bash
 npm install axios
